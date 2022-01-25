@@ -288,7 +288,7 @@ function program21(depth0,data) {
     'type': ("number"),
     'class': ("paramField"),
     'min': ("0"),
-    'max': ("10000"),
+    'max': ("100000"),
     'step': ("10"),
     'size': ("4"),
     'value': ("10"),
@@ -657,7 +657,7 @@ function program20(depth0,data) {
   data.buffer.push(escapeExpression((helper = helpers['number-input'] || (depth0 && depth0['number-input']),options={hash:{
     'numericValue': ("userFeedrate"),
     'min': (10),
-    'max': (10000),
+    'max': (100000),
     'step': (10)
   },hashTypes:{'numericValue': "ID",'min': "INTEGER",'max': "INTEGER",'step': "INTEGER"},hashContexts:{'numericValue': depth0,'min': depth0,'max': depth0,'step': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "number-input", options))));
   data.buffer.push("\n                <span class=\"input-group-addon\">mm/min</span></td>\n        </tr>\n        <tr>\n            <th title=\"start the spindle before the job, then stop it after completion\">Start Spindle</th>\n            <td>");
@@ -747,7 +747,7 @@ function program1(depth0,data) {
   data.buffer.push(escapeExpression((helper = helpers['number-input'] || (depth0 && depth0['number-input']),options={hash:{
     'numericValue': ("feedrate"),
     'min': (0),
-    'max': (10000),
+    'max': (100000),
     'step': (10),
     'disabled': ("cannotChangeFeedrate")
   },hashTypes:{'numericValue': "ID",'min': "INTEGER",'max': "INTEGER",'step': "INTEGER",'disabled': "ID"},hashContexts:{'numericValue': depth0,'min': depth0,'max': depth0,'step': depth0,'disabled': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "number-input", options))));
