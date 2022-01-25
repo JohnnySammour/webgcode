@@ -533,8 +533,8 @@ define(['libs/jsparse', 'cnc/util'], function (jp, util) {
         if (maxFeedRate == null)
             maxFeedRate = travelFeedRate;
         if (maxFeedRate == null && travelFeedRate == null) {
-            maxFeedRate = 3000;
-            travelFeedRate = 3000;
+            maxFeedRate = 10000;
+            travelFeedRate = 10000;
         }
         var machineState = createMachine(travelFeedRate, maxFeedRate, initialPosition, fragmentListener);
         var arrayOfLines = text.split(/\r?\n/);
