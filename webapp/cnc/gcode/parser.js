@@ -278,7 +278,7 @@ define(['libs/jsparse', 'cnc/util'], function (jp, util) {
             motionMode: moveTraverseRate,
             unitMode: mmConverter,
             planeMode: XY_PLANE,
-            feedRate: Math.min(3500, maxFeedRate),
+            feedRate: Math.min(4000, maxFeedRate),
             travelFeedRate: Math.min(travelFeedRate, maxFeedRate),
             pathControl: 61,
             path: path,
